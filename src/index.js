@@ -50,7 +50,7 @@ class NoSleep {
         } else {
           // mp4 source
           this.noSleepVideo.addEventListener("timeupdate", () => {
-            if (this.noSleepVideo.currentTime > 0.5) {
+            if (this.noSleepVideo.currentTime > 0.1) {
               this.noSleepVideo.currentTime = Math.random();
             }
           });
